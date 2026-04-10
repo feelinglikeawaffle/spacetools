@@ -1,69 +1,28 @@
 body {
+    margin: 0;
+    overflow: hidden;
     background: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
-    overflow: hidden;
 }
 
-#viewport {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    cursor: grab;
-}
-
-#solar-system {
+h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 22px;
+    z-index: 10;
 }
 
-#sun {
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(circle, #ffdd55, #ff8800);
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-40px, -40px);
-    box-shadow: 0 0 40px #ff8800;
-}
-
-/* Planet visuals */
-.planet {
-    position: absolute;
-    border-radius: 50%;
-}
-
-#mercury { width: 8px; height: 8px; background: gray; }
-#venus   { width: 12px; height: 12px; background: #d4a15a; }
-#earth   { width: 14px; height: 14px; background: #4a90e2; }
-#mars    { width: 10px; height: 10px; background: #b44; }
-#jupiter { width: 28px; height: 28px; background: #c9a97f; }
-#saturn  { width: 24px; height: 24px; background: #e3c27d; }
-#uranus  { width: 18px; height: 18px; background: #7fd1d1; }
-#neptune { width: 18px; height: 18px; background: #4169e1; }
-#pluto   { width: 6px; height: 6px; background: #aaa; }
-
-/* Moon */
-#moon {
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-}
-
-/* Hover info */
 #info-box {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 60px;
+    left: 10px;
     background: rgba(20, 20, 20, 0.9);
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
-    width: 250px;
+    width: 220px;
     display: none;
-    text-align: left;
+    z-index: 10;
 }
