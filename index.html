@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Space Tools – Solar System</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
-<h1>Space Tools – Solar System (Top‑Down)</h1>
+<h1>Space Tools – Solar System (Elliptical Orbits)</h1>
 
-<div id="solar-system">
+<div id="viewport">
+    <div id="solar-system">
+        <div id="sun"></div>
 
-    <div id="sun"></div>
+        <!-- Planets -->
+        <div class="planet" id="mercury"></div>
+        <div class="planet" id="venus"></div>
+        <div class="planet" id="earth"></div>
+        <div class="planet" id="mars"></div>
+        <div class="planet" id="jupiter"></div>
+        <div class="planet" id="saturn"></div>
+        <div class="planet" id="uranus"></div>
+        <div class="planet" id="neptune"></div>
+        <div class="planet" id="pluto"></div>
 
-    <div class="orbit" id="orbit-mercury"></div>
-    <div class="orbit" id="orbit-venus"></div>
-    <div class="orbit" id="orbit-earth"></div>
-    <div class="orbit" id="orbit-mars"></div>
-    <div class="orbit" id="orbit-jupiter"></div>
-    <div class="orbit" id="orbit-saturn"></div>
-    <div class="orbit" id="orbit-uranus"></div>
-    <div class="orbit" id="orbit-neptune"></div>
-    <div class="orbit" id="orbit-pluto"></div>
-
-    <div class="planet" id="mercury"></div>
-    <div class="planet" id="venus"></div>
-    <div class="planet" id="earth"></div>
-    <div class="planet" id="mars"></div>
-    <div class="planet" id="jupiter"></div>
-    <div class="planet" id="saturn"></div>
-    <div class="planet" id="uranus"></div>
-    <div class="planet" id="neptune"></div>
-    <div class="planet" id="pluto"></div>
-
-    <div id="moon"></div>
-
+        <!-- Moon -->
+        <div id="moon"></div>
+    </div>
 </div>
 
 <div id="info-box">
@@ -43,6 +35,6 @@
     <p><strong>Distance from Earth:</strong> <span id="dist-earth"></span> miles</p>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
