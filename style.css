@@ -3,79 +3,59 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
+    overflow: hidden;
+}
+
+#viewport {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    cursor: grab;
 }
 
 #solar-system {
-    position: relative;
-    width: 900px;
-    height: 900px;
-    margin: 0 auto;
-    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
 }
 
-/* Sun */
 #sun {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     background: radial-gradient(circle, #ffdd55, #ff8800);
     border-radius: 50%;
     position: absolute;
-    top: 390px;
-    left: 390px;
+    transform: translate(-40px, -40px);
     box-shadow: 0 0 40px #ff8800;
 }
 
-/* Orbit rings */
-.orbit {
-    position: absolute;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#orbit-mercury { width: 180px; height: 180px; }
-#orbit-venus   { width: 260px; height: 260px; }
-#orbit-earth   { width: 340px; height: 340px; }
-#orbit-mars    { width: 420px; height: 420px; }
-#orbit-jupiter { width: 520px; height: 520px; }
-#orbit-saturn  { width: 620px; height: 620px; }
-#orbit-uranus  { width: 720px; height: 720px; }
-#orbit-neptune { width: 820px; height: 820px; }
-#orbit-pluto   { width: 880px; height: 880px; }
-
-/* Planets */
+/* Planet visuals */
 .planet {
     position: absolute;
     border-radius: 50%;
-    cursor: pointer;
 }
 
-/* Place planets on the right side of each orbit */
-#mercury { width: 12px; height: 12px; background: gray; left: calc(50% + 90px); top: 50%; transform: translateY(-50%); }
-#venus   { width: 18px; height: 18px; background: #d4a15a; left: calc(50% + 130px); top: 50%; transform: translateY(-50%); }
-#earth   { width: 20px; height: 20px; background: #4a90e2; left: calc(50% + 170px); top: 50%; transform: translateY(-50%); }
-#mars    { width: 14px; height: 14px; background: #b44; left: calc(50% + 210px); top: 50%; transform: translateY(-50%); }
-#jupiter { width: 40px; height: 40px; background: #c9a97f; left: calc(50% + 260px); top: 50%; transform: translateY(-50%); }
-#saturn  { width: 36px; height: 36px; background: #e3c27d; left: calc(50% + 310px); top: 50%; transform: translateY(-50%); }
-#uranus  { width: 28px; height: 28px; background: #7fd1d1; left: calc(50% + 360px); top: 50%; transform: translateY(-50%); }
-#neptune { width: 28px; height: 28px; background: #4169e1; left: calc(50% + 410px); top: 50%; transform: translateY(-50%); }
-#pluto   { width: 10px; height: 10px; background: #aaa; left: calc(50% + 440px); top: 50%; transform: translateY(-50%); }
+#mercury { width: 8px; height: 8px; background: gray; }
+#venus   { width: 12px; height: 12px; background: #d4a15a; }
+#earth   { width: 14px; height: 14px; background: #4a90e2; }
+#mars    { width: 10px; height: 10px; background: #b44; }
+#jupiter { width: 28px; height: 28px; background: #c9a97f; }
+#saturn  { width: 24px; height: 24px; background: #e3c27d; }
+#uranus  { width: 18px; height: 18px; background: #7fd1d1; }
+#neptune { width: 18px; height: 18px; background: #4169e1; }
+#pluto   { width: 6px; height: 6px; background: #aaa; }
 
-/* Moon orbiting Earth */
+/* Moon */
 #moon {
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     background: white;
     border-radius: 50%;
     position: absolute;
-    left: calc(50% + 190px);
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-/* Info box */
+/* Hover info */
 #info-box {
     position: absolute;
     top: 20px;
